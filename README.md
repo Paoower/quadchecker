@@ -155,6 +155,6 @@ Supprime le fichier temporaire.
 
 `main`
 ```go
-	os.Remove("quad-x-y.txt")                                            // Supprimer le fichier quad-x-y.txt
+	os.Remove("quad-x-y.txt")
 }
 ```
