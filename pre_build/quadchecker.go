@@ -20,17 +20,15 @@ func main() {
 		os.Exit(1)
 	}
 	targetOutput := string(input)
-	if !(targetOutput >= "A" && targetOutput <= "E") {
-		fmt.Println("Not a quad function")
-		return
-	}
 
 	// Lire les valeurs de x et y à partir du fichier quad-x-y.txt
 	data, err := ioutil.ReadFile("quad-x-y.txt")
 	if err != nil {
-		fmt.Println("Erreur lors de la lecture du fichier :", err)
-		os.Exit(1)
+		fmt.Println("Not a quad function")
+		return
 	}
+
+	fmt.Println(targetOutput)
 
 	// Extraire les valeurs de x et y à partir des chaînes de caractères formatees avec %!s(int=...)
 	xStr := strings.Trim(string(data[:len(data)/2]), "%!s(int=) ")
