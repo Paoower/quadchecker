@@ -1,0 +1,22 @@
+#! bin/bash
+
+mv ./pre_build/quadA.go ./
+go build quadA.go
+rm quadA.go
+mv ./pre_build/quadB.go ./
+go build quadB.go
+rm quadB.go
+mv ./pre_build/quadC.go ./
+go build quadC.go
+rm quadC.go
+mv ./pre_build/quadD.go ./
+go build quadD.go
+rm quadD.go
+mv ./pre_build/quadE.go ./
+go build quadE.go
+rm quadE.go
+mv ./pre_build/quadchecker.go ./
+go build quadchecker.go
+rm quadchecker.go
+rm -r pre_build
+echo "All files have been compiled successfully, enjoy."
