@@ -27,11 +27,7 @@ func main() {
 }
 
 func OutputOfExec() string {
-	input, err := ioutil.ReadAll(os.Stdin)
-	if err != nil {
-		fmt.Println("Erreur lors de la lecture de l'entree standard :", err)
-		os.Exit(1)
-	}
+	input, _ := ioutil.ReadAll(os.Stdin)
 	return string(input)
 }
 
