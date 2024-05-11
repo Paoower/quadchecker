@@ -53,7 +53,7 @@ func OutputOfExec() string {
 ```
 ### ReadQuadTxt
 
-Chacune des fonctions quadA-E génèrent un fichier texte temporaire contenant les valeurs de `x` et `y` demandées par la ligne de commande via `quadchecker`
+Chacune des fonctions quadA-E génère un fichier texte temporaire contenant les valeurs de `x` et `y` demandées par la ligne de commande via `quadchecker`
 
 `ReadQuadTxt` ouvre donc le fichier en question, s'il n'est pas capable de l'ouvrir alors ça n'est pas une fonction quad.
 
@@ -125,7 +125,7 @@ avec `cmd.Run()` la ligne de commande est exécutée pour chaque fonction quadA-
 
 À chaque itération la fonction [strings.EqualFold](https://pkg.go.dev/strings#EqualFold) compare la sortie standard de la fonction testée au départ avec la fonction testée durant cette itération.
 
-Si elles sont identiques alors elle les impriment.
+Si elles sont identiques alors elle les imprime.
 
 `ExecAllQuads`
 
